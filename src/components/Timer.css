@@ -1,0 +1,57 @@
+/* Timer.css */
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Golos Text", sans-serif;
+    font-size: 90px;
+}
+
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* .number {
+    font-size: 3rem;
+    font-weight: bold;
+} */
+
+.unit {
+    font-family: "Georama", sans-serif;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    margin-top: 10px;
+}
+
+.colon {
+    /* font-size: 3rem; */
+    margin: 0 15px;
+}
+
+/* Center the timer on the screen */
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .timer {
+        flex-direction: column;
+        font-size: 5rem;
+    }
+
+    .timer-box {
+        margin: 10px 0;
+    }
+
+    .colon {
+        display: none;
+    }
+}

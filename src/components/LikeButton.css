@@ -1,0 +1,25 @@
+/* LikeButton.css */
+
+/* Updated LikeButton.css to include a fun shaking animation */
+
+@keyframes shake {
+    0% { transform: scale(1.2) translateX(0) rotate(0deg); }
+    10% { transform: scale(1.4) translateX(-5px) rotate(-10deg); }
+    20% { transform: scale(1.6) translateX(5px) rotate(10deg); }
+    30% { transform: scale(1.8) translateX(-5px) rotate(-10deg); }
+    40% { transform: scale(2) translateX(5px) rotate(10deg); }
+    50% { transform: scale(2.2) translateX(-5px) rotate(-10deg); }
+    60% { transform: scale(2) translateX(5px) rotate(10deg); }
+    70% { transform: scale(1.8) translateX(-5px) rotate(-10deg); }
+    80% { transform: scale(1.6) translateX(5px) rotate(10deg); }
+    90% { transform: scale(1.4) translateX(-5px) rotate(-10deg); }
+    100% { transform: scale(1.2) translateX(0) rotate(0deg); }
+}
+
+.like-button {
+    transition: color 1s ease;
+}
+
+.like-button.animating {
+    animation: shake 1s ease; /* Increased duration to accommodate more shakes */
+}

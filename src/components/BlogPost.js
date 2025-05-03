@@ -1,10 +1,10 @@
 // src/components/BlogPost.js
 import React from 'react';
 
-const BlogPost = ({ title, content }) => (
+const BlogPost = ({ title, content: description }) => (
     <div>
         <h2>{title}</h2>
-        <p>{content}</p>
+        <p>{description}</p>
     </div>
 );
 

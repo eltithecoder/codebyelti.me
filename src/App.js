@@ -1,15 +1,23 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-import Blog from './components/Blog';
+// import NavBar from './components/NavBar';
+import Timer from './components/Timer';
+import LikeButton from './components/LikeButton';
+// import Spacer from './components/Spacer';
 
 function App() {
+    const handlePositionChange = (newPosition) => {
+        console.log('Button moved to:', newPosition);
+    };
+
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>My Blog</h1>
-            </header>
-            <Blog />
+        <div className='app'>
+            {/* <NavBar /> */}
+            {/* <Spacer height={"200px"}/> */}
+            <Timer />
+            {/* <h1 className='caption'>Till you see Elti</h1> */}
+            <LikeButton onPositionChange={handlePositionChange} />
         </div>
     );
 }
